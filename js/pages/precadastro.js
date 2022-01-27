@@ -1,4 +1,4 @@
-import { setAlert, sendEmailVerificationToken, verifyEmailToken, submitSecond, validateCNPJ } from "../ChampAPI.js";
+import { setAlert, verifyEmailToken, submitSecond, validateCNPJ, sendRegisterUser } from "../ChampAPI.js";
 
 $(document).ready(() => {
     $("#code").mask('0-0-0-0')
@@ -15,19 +15,28 @@ $(document).ready(() => {
             $("#submit").attr('disabled', false);
             return false;
         } else {
-            sendEmailVerificationToken($("#email").val())
+
+        // Envio dos dados cadastrados
+        let data = {
+            name:$("#firstName").val(),
+            email:$("#email").val(),
+            email_confirmation:$("#email").val(),
+            password:$("#password").val()
+        }
+
+        sendRegisterUser(data)
                 .then(() => {
                     $("#firstName").parent().hide();
                     $("#password").parent().hide();
                     $("#confirm_password").parent().hide();
-                    $("#submit").html('Enviar novo E-mail');
+                    $("#submit").html('Cadastro realizado com sucesso!');
                     $('#code').html("")
                     $(".code-class").show(1000)
                     $("#submit").attr('disabled', false);
                 })
                 .catch(resp => {
                     $("#message").show();
-                    setAlert("#message", "danger", resp.responseJSON.message, true)
+                    setAlert("#message", "danger", resp.responseJSON.description, true) //
                 })
         }
     }

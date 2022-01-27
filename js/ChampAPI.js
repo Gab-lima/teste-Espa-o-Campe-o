@@ -1,5 +1,5 @@
-//const URL = 'https://dev.plataformacampeao.com.br/api';
-const URL = 'http://champion-dev/api';
+const URL = 'https://dev.plataformacampeao.com.br/api';
+//const URL = 'http://champion-dev/api';
 
 
 export const setAlert = (el, type, message, time = true) => {
@@ -72,6 +72,16 @@ export const sendEmailVerificationToken = (email) => {
         url: URL + "/send-token/" + email,
         dataType: "JSON",
         type: "POST",
+    })
+}
+
+// Envio de cadastro
+export const sendRegisterUser = (data) => {
+    return $.ajax({
+        url: URL + "/register",
+        dataType: "JSON",
+        type: "POST",
+        data: data
     })
 }
 
