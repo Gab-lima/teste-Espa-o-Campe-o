@@ -1,0 +1,3051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Painel - Plataforma Campeão</title>
+	<!-- Favicon icon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
+	<link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+	<link href="./vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+
+	<!-- Dropzone css -->
+	<link href="./assets/plugins/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css">
+	<link href="./assets/plugins/dropify/css/dropify.min.css" rel="stylesheet">
+
+	<link href="./vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+	<!-- asColorpicker -->
+	<link href="./vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet">
+	<!-- Material color picker -->
+	<link href="./vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+	<!-- Pick date -->
+	<link rel="stylesheet" href="./vendor/pickadate/themes/default.css">
+	<link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
+</head>
+
+<body>
+
+	<!--*******************
+        Preloader start
+    ********************-->
+	<div id="preloader">
+		<div class="sk-three-bounce">
+			<div class="sk-child sk-bounce1"></div>
+			<div class="sk-child sk-bounce2"></div>
+			<div class="sk-child sk-bounce3"></div>
+		</div>
+	</div>
+	<!--*******************
+        Preloader end
+    ********************-->
+
+	<!--**********************************
+        Main wrapper start
+    ***********************************-->
+	<div id="main-wrapper">
+
+		<!--**********************************
+            Nav header start
+        ***********************************-->
+		<div class="nav-header">
+			<a href="index.html" class="brand-logo">
+				<img class="logo-abbr" src="./images/logo.png" alt="">
+				<img class="logo-compact" src="./images/logo-text.png" alt="">
+				<img class="brand-title" src="./images/logo-text.png" alt="">
+			</a>
+
+			<div class="nav-control">
+				<div class="hamburger">
+					<span class="line"></span><span class="line"></span><span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+            Nav header end
+        ***********************************-->
+
+		<!--**********************************
+            Chat box start
+        ***********************************-->
+
+
+		<!--**********************************
+            Chat box End
+        ***********************************-->
+
+		<!--**********************************
+            Header start
+        ***********************************-->
+		<div class="header">
+			<div class="header-content">
+				<nav class="navbar navbar-expand">
+					<div class="collapse navbar-collapse justify-content-between">
+						<div class="header-left">
+							<div class="dashboard_bar">
+
+							</div>
+						</div>
+						<ul class="navbar-nav header-right">
+							<li class="nav-item">
+
+							</li>
+
+							<li class="nav-item dropdown header-profile">
+								<a class="nav-link" href="javascript:void(0)" role="button" data-toggle="dropdown">
+									<img src="images/profile/17.jpg" width="20" alt="" />
+									<div class="header-info">
+										<span class="text-black"><strong>Gustavo Henrique</strong></span>
+										<p class="fs-12 mb-0">Produtor</p>
+									</div>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a href="./app-profile.html" class="dropdown-item ai-icon">
+										<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
+											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+											<circle cx="12" cy="7" r="4"></circle>
+										</svg>
+										<span class="ml-2">Perfil</span>
+									</a>
+									<a href="./page-login.html" class="dropdown-item ai-icon">
+										<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger"
+											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+											<polyline points="16 17 21 12 16 7"></polyline>
+											<line x1="21" y1="12" x2="9" y2="12"></line>
+										</svg>
+										<span class="ml-2">Sair</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+		<!--**********************************
+            Sidebar start
+        ***********************************-->
+		<div class="deznav">
+			<div class="deznav-scroll">
+				<ul class="metismenu" id="menu">
+					<li><a href="index.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-networking"></i>
+							<span class="nav-text">Dashboard</span>
+						</a>
+					</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-381-album-2"></i>
+							<span class="nav-text">Produtos</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="digitais.html">Digitais</a></li>
+							<!--<li><a href="workout-statistic.html">Físicos</a></li>-->
+						</ul>
+					</li>
+					<li><a href="afiliados.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-user-9"></i>
+							<span class="nav-text">Meus afiliados</span>
+						</a>
+					</li>
+					<li><a href="vendas.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-success-2"></i>
+							<span class="nav-text">Vendas</span>
+						</a>
+					</li>
+					<li><a href="assinaturas.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-calendar-7"></i>
+							<span class="nav-text">Assinaturas</span>
+						</a>
+					</li>
+					<li><a href="financeiro.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-notepad"></i>
+							<span class="nav-text">Financeiro</span>
+						</a>
+					</li>
+					<!--<li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-networking"></i>
+							<span class="nav-text">Relatórios</span>
+						</a>
+					</li>-->
+					<li><a href="colaboradores.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-user-4"></i>
+							<span class="nav-text">Colaboradores</span>
+						</a>
+					</li>
+					<li><a href="integracoes.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-settings-5"></i>
+							<span class="nav-text">Integrações</span>
+						</a>
+					</li>
+					<!--<li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-networking"></i>
+							<span class="nav-text">Área de membros</span>
+						</a>
+					</li>-->
+
+				</ul>
+				<div class="add-menu-sidebar">
+					<img src="images/calendar.png" alt="" class="mr-3">
+					<p class="	font-w500 mb-0">Criar um produto agora</p>
+				</div>
+				<div class="copyright">
+					<p><strong>Painel</strong> © 2021 Todos os direitos reservados</p>
+					<p>Feito<span class="heart"></span>Plataforma Campeão</p>
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+            Sidebar end
+        ***********************************-->
+
+		<!--**********************************
+            Content body start
+        ***********************************-->
+		<div class="content-body">
+			<!-- row -->
+			<div class="container-fluid">
+				<div class="page-titles d-flex justify-content-between align-items-center">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="javascript:void(0)">Editar produto </a></li>
+					</ol>
+
+					
+						<ol class="breadcrumb hide-phone p-0 m-0">
+							<li class="breadcrumb-item active"><button type="button"
+									class="btn btn-primary waves-effect waves-light">Salvar
+									produto</button>
+							</li>
+						</ol>
+
+						
+					
+
+				</div>
+				<div class="row">
+					<div class="col-xl-6 col-xxl-12">
+						<div class="row">
+							<div class="col-xl-12">
+
+
+								<div class="card">
+									<div class="row">
+										<!-- Column -->
+										<div class="col-md-12 col-lg-12 col-xl-12">
+											<div class="card m-b-30">
+												<div class="card-body">
+
+
+
+													<!-- Nav tabs -->
+													<ul class="nav nav-pills nav-justified" role="tablist">
+														<li class="nav-item waves-effect waves-light">
+															<a class="nav-link active" data-toggle="tab" href="#geral-1"
+																role="tab">Geral</a>
+														</li>
+														<li class="nav-item waves-effect waves-light">
+															<a class="nav-link" data-toggle="tab" href="#pagamentos-1"
+																role="tab">Valor</a>
+														</li>
+														<li class="nav-item waves-effect waves-light">
+															<a class="nav-link" data-toggle="tab" href="#cupom-1"
+																role="tab">Cupom</a>
+														</li>
+														<li class="nav-item waves-effect waves-light">
+															<a class="nav-link" data-toggle="tab" href="#paginas-1"
+																role="tab">Páginas</a>
+														</li>
+														<!--<li class="nav-item waves-effect waves-light">
+															<a class="nav-link" data-toggle="tab" href="#checkout-1"
+																role="tab">Checkout</a>
+														</li>-->
+														<li class="nav-item waves-effect waves-light">
+															<a class="nav-link" data-toggle="tab" href="#coproducao-1"
+																role="tab">Coprodução</a>
+														</li>
+														<li class="nav-item waves-effect waves-light">
+															<a class="nav-link" data-toggle="tab" href="#afiliados-1"
+																role="tab">Afiliados</a>
+														</li>
+														<li class="nav-item waves-effect waves-light">
+															<a class="nav-link" data-toggle="tab" href="#links-1"
+																role="tab">Links</a>
+														</li>
+														<!--<li class="nav-item waves-effect waves-light">
+															<a class="nav-link" data-toggle="tab" href="#aplicativos-1"
+																role="tab">Aplicativos</a>
+														</li>-->
+														<li class="nav-item waves-effect waves-light">
+															<a class="nav-link" data-toggle="tab" href="#pixels-1"
+																role="tab">Pixels</a>
+														</li>
+													</ul>
+
+													<!-- Tab panes -->
+													<div class="tab-content">
+														<div class="tab-pane active p-3" id="geral-1" role="tabpanel">
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-body">
+																	<h4 class="card-title">PRODUTO</h4>
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Nome do
+																		produto</label>
+																	<input class="form-control" type="text" value=""
+																		id="example-text-input"
+																		style="width: 300px; margin-bottom: 10px;">
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Descrição do
+																		produto</label>
+																	<textarea id="textarea" class="form-control"
+																		maxlength="225" rows="3"
+																		placeholder="Informe a descrição do produto."
+																		style="width: 500px; margin-bottom: 10px;"></textarea>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Categoria</label>
+																	<select class="form-control"
+																		style="width: 300px; margin-bottom: 10px;">
+																		<option>Selecione</option>
+																	</select>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Idioma</label>
+																	<select class="form-control"
+																		style="width: 300px; margin-bottom: 10px;">
+																		<option>Selecione</option>
+																	</select>
+
+																	<h4 class="mt-0 header-title">Logotipo</h4>
+																	<div class="m-b-30">
+																		<form action="#" class="dropzone"
+																			style="width: 300px;">
+																			<div class="fallback">
+																				<input name="file" type="file"
+																					multiple="multiple">
+																			</div>
+																		</form>
+																	</div>
+																	<h4 class="mt-0 header-title">Imagem do produto</h4>
+																	<div class="m-b-30">
+																		<form action="#" class="dropzone">
+																			<div class="fallback">
+																				<input name="file" type="file"
+																					multiple="multiple">
+																			</div>
+																		</form>
+																	</div>
+																	<!-- end col -->
+
+																</div>
+															</div>
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-body">
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">E-mail de
+																		suporte</label>
+																	<input class="form-control" type="text" value=""
+																		id="example-text-input"
+																		style="width: 300px; margin-bottom: 10px;">
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Nome de exibição do
+																		produtor</label>
+																	<input class="form-control" type="text" value=""
+																		id="example-text-input"
+																		style="width: 300px; margin-bottom: 10px;">
+																</div>
+															</div>
+
+
+														</div>
+
+														<div class="tab-pane p-3" id="pagamentos-1" role="tabpanel">
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-body">
+																	<h4 class="card-title">PREÇOS</h4>
+																	<div class="col-md-12 row">
+																		<div class="col-md-4">
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Preço do
+																				produto</label>
+																			<input class="form-control" type="text"
+																				value="" id="example-text-input"
+																				style="margin-bottom: 10px;">
+																		</div>
+																		<div class="col-md-4">
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Prazo de
+																				garantia</label>
+																			<select class="form-control"
+																				style="margin-bottom: 10px;">
+																				<option>Reembolso</option>
+																				<option>7 dias</option>
+																				<option>15 dias</option>
+																				<option>30 dias</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="col-md-12">
+																		<label for="example-text-input"
+																			class="mt-0 header-title">Esse produto tem
+																			diferentes ofertas</label>
+																		<div
+																			class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																			<input type="checkbox"
+																				class="custom-control-input"
+																				id="customSwitchOfertas">
+																			<label class="custom-control-label"
+																				for="customSwitchOfertas"></label>
+																		</div>
+
+																	</div>
+																	<div class="col-md-12 active-ofertas hidden teste">
+
+																			<h4 class="card-title">OFERTAS</h4>
+	
+																			<div class="oferta-form  oferta0">
+																				<div class="col-md-12 row">
+																					<div class="col-md-5">Nome</div>
+																					<div class="col-md-5">Preço</div>
+																				</div>
+																				<div class="col-md-10 row inputs">
+																					<div class="col-md-5">
+																						<input class="form-control nome-oferta" type="text"
+																							value=""
+																							style="margin-bottom: 10px;">
+																					</div>
+																					<div class="col-md-5 row">
+																						<input class="form-control preco-oferta" type="text"
+																							value=""
+																							style="margin-bottom: 10px;">
+																					
+																					</div>
+																					<button class="mt-2 ml-2 buttom-x remove-oferta-item" onClick="removeOfertaItem(this)">X</button>
+																				</div>
+																			</div>
+
+																			<div class="col-md-10">
+																				<button 
+																					type="button"
+																					class="btn btn-primary"
+																					id="add-ofertas-action"
+																				>Adicionar outro</button>
+																			</div>
+																	</div>
+
+																</div>
+															</div>
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card">
+																	<div class="card-header">
+																		<h4 class="card-title">PLANO DE ASSINATURA</h4>
+																		<button type="button"
+																			class="btn btn-primary mb-2"
+																			data-toggle="modal"
+																			data-target="#assinatura"
+																			id="modal-assgn-action">Adicionar
+																			plano</button>
+																		<!-- Modal -->
+																		<div class="modal fade" id="assinatura">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<form id="formPlanAssing" name="formPlanAssing">
+																					<div class="modal-header">
+																						<h5 class="modal-title">
+																							Adicionar plano</h5>
+																						<button type="button"
+																							class="close"
+																							id="close-modal-assgn"
+																							data-dismiss="modal"><span>&times;</span>
+																						</button>
+																					</div>
+																					<div class="modal-body">
+
+																						<label for="example-text-input"
+																							class="mt-0 header-title">Nome
+																							do plano</label>
+																						<input class="form-control"
+																							type="text" value=""
+																							id="example-text-input"
+																							name="nomeAssnPlan"
+																							style="margin-bottom: 10px;" required>
+
+																						<label for="example-text-input"
+																							class="mt-0 header-title">Valor
+																							do plano</label>
+																						<input class="form-control"
+																							type="text" value=""
+																							name="valorAssnPlan"
+																							id="example-text-input"
+																							style="margin-bottom: 10px;" required>
+
+																						<label for="example-text-input"
+																							class="mt-0 header-title">Frequência</label>
+																						<select class="form-control"
+																							name="freqAssnPlan"
+																							style="width: 300px; margin-bottom: 10px;" required>
+																							<option value="">Selecione</option>
+																							<option>Semanal</option>
+																							<option>Mensal</option>
+																							<option>Bimestral</option>
+																							<option>Trimestral</option>
+																							<option>Semestral</option>
+																							<option>Anual</option>
+																						</select>
+
+																						<label for="example-text-input"
+																							class="mt-0 header-title">Renovação
+																							automática</label>
+																						<div class="col-sm-9">
+																							<div class="form-check">
+																								<input
+																									class="form-check-input"
+																									type="radio"
+																									name="renovacaoAssnPlan"
+																									value="1"
+																									checked>
+																								<label
+																									class="form-check-label">
+																									Até o cliente
+																									cancelar
+																								</label>
+																							</div>
+																							<div class="form-check">
+																								<input
+																									class="form-check-input"
+																									type="radio"
+																									name="renovacaoAssnPlan"
+																									value="2">
+																								<label
+																									class="form-check-label">
+																									Número fixo de
+																									cobranças
+																								</label>
+																							</div>
+																							<div
+																								class="form-check disabled">
+																								<label
+																									class="form-check-label">
+																									<input
+																										class="form-control"
+																										type="number"
+																										value=""
+																										name="numCobrancaAssnPlan"
+																										id="example-text-input"
+																										style="margin-bottom: 10px;">
+																								</label>
+																							</div>
+																						</div>
+
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-danger light" data-dismiss="modal">
+																							Cancelar
+																						</button>
+																						<button type="submit" class="btn btn-primary">
+																							Adicionar plano
+																						</button>
+																					</div>
+																				</form>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-body">
+																		<div class="table-responsive">
+																			<table class="table table-responsive-md">
+																				<thead>
+																					<tr>
+																						<th>PLANO</th>
+																						<th></th>
+																						<th>VALOR</th>
+																						<th></th>
+																						<th>FREQUÊNCIA</th>
+																						<th>VENCIMENTO</th>
+																						<th>AÇÕES</th>
+																					</tr>
+																				</thead>
+																				<tbody id="list-assn-plan">
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-body">
+																	<h4 class="card-title">FORMAS DE PAGAMENTO</h4>
+																	<div
+																		class="col-md-12 d-flex justify-content-between">
+																		<div class="col-md-4">
+																			<h4 class="card-title">CARTÃO</h4>
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Habilitar
+																				cartão</label>
+																			<div
+																				class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																				<input type="checkbox"
+																					class="custom-control-input"
+																					id="customSwitchCartao">
+																				<label class="custom-control-label"
+																					for="customSwitchCartao"></label>
+																			</div>
+
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Habilitar
+																				múltiplos cartões</label>
+																			<div
+																				class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																				<input type="checkbox"
+																					class="custom-control-input"
+																					id="customSwitchMultiploCartao">
+																				<label class="custom-control-label"
+																					for="customSwitchMultiploCartao"></label>
+																			</div>
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Tipo de
+																				pagamento</label>
+																			<select class="form-control"
+																				style="margin-bottom: 10px;">
+																				<option>Selecione</option>
+																				<option>Somente à vista</option>
+																				<option>Permitir parcelamento</option>
+																				<option>Permitir parcelamento (juros
+																					pago pelo produtor)</option>
+																			</select>
+
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Opções de
+																				parcelamento</label>
+																			<select class="form-control"
+																				style="margin-bottom: 10px;">
+																				<option>Selecione</option>
+																				<option>1 x de R$ 0,00</option>
+																				<option>2 x de R$ 0,00</option>
+																				<option>3 x de R$ 0,00</option>
+																				<option>4 x de R$ 0,00</option>
+																				<option>5 x de R$ 0,00</option>
+																				<option>6 x de R$ 0,00</option>
+																				<option>7 x de R$ 0,00</option>
+																				<option>8 x de R$ 0,00</option>
+																				<option>9 x de R$ 0,00</option>
+																				<option>10 x de R$ 0,00</option>
+																				<option>11 x de R$ 0,00</option>
+																				<option>12 x de R$ 0,00</option>
+
+																			</select>
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Como a venda
+																				deverá ser identificada </br>na fatura
+																				do cliente?</label>
+																			<input class="form-control" type="text"
+																				value="" id="example-text-input"
+																				style="margin-bottom: 10px;">
+																		</div>
+
+																		<div class="col-md-4">
+																			<h4 class="card-title">BOLETO BANCÁRIO</h4>
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Habilitar
+																				boleto</label>
+																			<div
+																				class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																				<input type="checkbox"
+																					class="custom-control-input"
+																					id="customSwitchBoleto">
+																				<label class="custom-control-label"
+																					for="customSwitchBoleto"></label>
+																			</div>
+
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Habilitar
+																				boleto parcelado</label>
+																			<div
+																				class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																				<input type="checkbox"
+																					class="custom-control-input"
+																					id="customSwitchBoletoParcelado">
+																				<label class="custom-control-label"
+																					for="customSwitchBoletoParcelado"></label>
+																			</div>
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Validade do
+																				boleto</label>
+																			<input class="form-control" type="text"
+																				value="" id="example-text-input"
+																				style="margin-bottom: 10px;">
+
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Opções de
+																				parcelamento</label>
+																			<select class="form-control"
+																				style="margin-bottom: 10px;">
+																				<option>Selecione</option>
+																				<option>1 x de R$ 0,00</option>
+																				<option>2 x de R$ 0,00</option>
+																				<option>3 x de R$ 0,00</option>
+																				<option>4 x de R$ 0,00</option>
+																				<option>5 x de R$ 0,00</option>
+																				<option>6 x de R$ 0,00</option>
+																				<option>7 x de R$ 0,00</option>
+																				<option>8 x de R$ 0,00</option>
+																				<option>9 x de R$ 0,00</option>
+																				<option>10 x de R$ 0,00</option>
+																				<option>11 x de R$ 0,00</option>
+																				<option>12 x de R$ 0,00</option>
+
+																			</select>
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Juros
+																				aplicados ao mês</label>
+																			<input class="form-control" type="text"
+																				value="" id="example-text-input"
+																				style="margin-bottom: 10px;">
+
+																		</div>
+																		<div class="col-md-4">
+																			<h4 class="card-title">PIX</h4>
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Habilitar
+																				PIX</label>
+																			<div
+																				class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																				<input type="checkbox"
+																					class="custom-control-input"
+																					id="customSwitchPIX">
+																				<label class="custom-control-label"
+																					for="customSwitchPIX"></label>
+																			</div>
+
+
+
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card">
+																	<div class="card-header">
+																		<h4 class="card-title">ORDEM BUMPER</h4>
+																		<button type="button"
+																			class="btn btn-primary mb-2"
+																			data-toggle="modal"
+																			data-target="#ordemBumper">Adicionar
+																			ordem</button>
+																		<!-- Modal -->
+																		<div class="modal fade" id="ordemBumper">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title">
+																							Adicionar ordem</h5>
+																						<button type="button"
+																							class="close"
+																							data-dismiss="modal"><span>&times;</span>
+																						</button>
+																					</div>
+																					<div class="modal-body">
+
+																						<label for="example-text-input"
+																							class="mt-0 header-title">Produto</label>
+																						<select class="form-control"
+																							style="width: 300px; margin-bottom: 10px;">
+																							<option>Selecione</option>
+																							<option>Lista de produtos
+																							</option>
+																						</select>
+
+																						<label for="example-text-input"
+																							class="mt-0 header-title">Oferta</label>
+																						<select class="form-control"
+																							style="width: 300px; margin-bottom: 10px;">
+																							<option>Selecione</option>
+																							<option>Lista de ofertas
+																							</option>
+																						</select>
+
+																						<label for="example-text-input"
+																							class="mt-0 header-title">Call
+																							to action</label>
+																						<input class="form-control"
+																							type="text" value=""
+																							id="example-text-input"
+																							style="margin-bottom: 10px;">
+
+																						<label for="example-text-input"
+																							class="mt-0 header-title">Título</label>
+																						<input class="form-control"
+																							type="text" value=""
+																							id="example-text-input"
+																							style="margin-bottom: 10px;">
+
+																						<label for="example-text-input"
+																							class="mt-0 header-title">Descrição</label>
+																						<input class="form-control"
+																							type="text" value=""
+																							id="example-text-input"
+																							style="margin-bottom: 10px;">
+
+																						<div class="col-md-12"
+																							style="border: 2px solid #80ffff; border-style: dashed; margin-top: 15px;">
+																							<div class="row">
+																								<div class="col-md-12"
+																									style="text-align: center; height: 50px; background-color: aqua; border: aquamarine 1px solid;">
+																									<p>
+																										SIM, EU ACEITO
+																										ESSA OFERTA
+																										ESPECIAL
+																									</p>
+																								</div>
+																							</div>
+																							<div class="col-md-12">
+																								<p>
+																									<input
+																										type="checkbox"
+																										class="form-check-input"
+																										value=""
+																										checked> Nome do
+																									seu produto:
+																									Adicione a compra -
+																									R$ 100,00
+																								</p>
+																							</div>
+
+																						</div>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button"
+																							class="btn btn-danger light"
+																							data-dismiss="modal">Cancelar</button>
+																						<button type="button"
+																							class="btn btn-primary">Adicionar
+																							plano</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-body">
+																		<div class="table-responsive">
+																			<table class="table table-responsive-md">
+																				<thead>
+																					<tr>
+																						<th>NOME</th>
+																						<th></th>
+																						<th>PREÇO</th>
+																						<th></th>
+																						<th>STATUS</th>
+																						<th></th>
+																						<th>AÇÕES</th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td>Fórmula X</td>
+																						<td></td>
+																						<td>R$ 1.000,00</td>
+																						<td></td>
+																						<td><span
+																								class="badge light badge-success">Ativo</span>
+																						</td>
+																						<td></td>
+																						<td>
+																							<div class="dropdown">
+																								<button type="button"
+																									class="btn btn-success light sharp"
+																									data-toggle="dropdown">
+																									<svg width="20px"
+																										height="20px"
+																										viewBox="0 0 24 24"
+																										version="1.1">
+																										<g stroke="none"
+																											stroke-width="1"
+																											fill="none"
+																											fill-rule="evenodd">
+																											<rect x="0"
+																												y="0"
+																												width="24"
+																												height="24" />
+																											<circle
+																												fill="#000000"
+																												cx="5"
+																												cy="12"
+																												r="2" />
+																											<circle
+																												fill="#000000"
+																												cx="12"
+																												cy="12"
+																												r="2" />
+																											<circle
+																												fill="#000000"
+																												cx="19"
+																												cy="12"
+																												r="2" />
+																										</g>
+																									</svg>
+																								</button>
+																								<div
+																									class="dropdown-menu">
+																									<a class="dropdown-item"
+																										href="#">Desativar</a>
+																									<a class="dropdown-item"
+																										href="#">Editar</a>
+																									<a class="dropdown-item"
+																										href="#">Excluir</a>
+																								</div>
+																							</div>
+																						</td>
+																					</tr>
+
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+
+														<div class="tab-pane p-3" id="cupom-1" role="tabpanel">
+
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-header">
+																	<h4 class="card-title">CUPOM</h4>
+																	<button type="button" class="btn btn-primary mb-2"
+																		data-toggle="modal"
+																		data-target="#exampleModalLong">Criar novo
+																		cupom</button>
+																	<!-- Modal -->
+																	<div class="modal fade" id="exampleModalLong">
+																		<div class="modal-dialog">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h5 class="modal-title">Criar novo
+																						cupom</h5>
+																					<button type="button" class="close"
+																						data-dismiss="modal"><span>&times;</span>
+																					</button>
+																				</div>
+																				<div class="modal-body">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Nome
+																						do cupom</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Código
+																						do cupom</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Qual
+																						desconto?</label>
+																					<div class="form-group">
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<input
+																									class="form-control"
+																									type="text" value=""
+																									id="example-text-input">
+																							</label>
+																						</div>
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<select
+																									class="form-control">
+																									<option>Selecione
+																									</option>
+																									<option>Fixo
+																									</option>
+																									<option>Porcentagem
+																									</option>
+																								</select>
+																							</label>
+																						</div>
+																					</div>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Período
+																						- Início</label>
+																					<div class="form-group">
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<input
+																									class="form-control"
+																									type="text"
+																									value="00/00/0000"
+																									id="example-text-input"
+																									style="width: 190px;">
+																							</label>
+																						</div>
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<input
+																									class="form-control"
+																									type="text"
+																									value="12:00"
+																									id="example-text-input"
+																									style="width: 190px;">
+																							</label>
+																						</div>
+																					</div>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Período
+																						- Término</label>
+																					<div class="form-group">
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<input
+																									class="form-control"
+																									type="text"
+																									value="00/00/0000"
+																									id="example-text-input"
+																									style="width: 190px;">
+																							</label>
+																						</div>
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<input
+																									class="form-control"
+																									type="text"
+																									value="12:00"
+																									id="example-text-input"
+																									style="width: 190px;">
+																							</label>
+																						</div>
+																					</div>
+
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Quantidade
+																						de cupons disponíveis?</label>
+																					<div class="form-group">
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<input
+																									class="form-control"
+																									type="text" value=""
+																									id="example-text-input"
+																									style="margin-bottom: 10px;">
+																							</label>
+																						</div>
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									value="">ilimitado
+																							</label>
+																						</div>
+																					</div>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Quantas
+																						vezes um usuário pode
+																						utilizar?</label>
+																					<div class="form-group">
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<input
+																									class="form-control"
+																									type="text" value=""
+																									id="example-text-input"
+																									style="margin-bottom: 10px;">
+																							</label>
+																						</div>
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									value="">ilimitado
+																							</label>
+																						</div>
+																					</div>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Status</label>
+																					<select class="form-control"
+																						style="width: 300px; margin-bottom: 10px;">
+																						<option>Selecione</option>
+																						<option>Ativo</option>
+																						<option>Inativo</option>
+																					</select>
+
+																				</div>
+																				<div class="modal-footer">
+																					<button type="button"
+																						class="btn btn-danger light"
+																						data-dismiss="modal">Cancelar</button>
+																					<button type="button"
+																						class="btn btn-primary">Criar
+																						cupom</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="card-body">
+																	<div class="table-responsive">
+																		<table class="table table-responsive-md">
+																			<thead>
+																				<tr>
+																					<th class="width80">#</th>
+																					<th>NOME</th>
+																					<th>CÓDIGO</th>
+																					<th>DESCONTO</th>
+																					<th>STATUS</th>
+																					<th></th>
+																					<th>AÇÕES</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td><strong>01</strong></td>
+																					<td>Natal 2022</td>
+																					<td>natal22</td>
+																					<td>10%</td>
+																					<td><span
+																							class="badge light badge-success">Ativo</span>
+																					</td>
+																					<td></td>
+																					<td>
+																						<div class="dropdown">
+																							<button type="button"
+																								class="btn btn-success light sharp"
+																								data-toggle="dropdown">
+																								<svg width="20px"
+																									height="20px"
+																									viewBox="0 0 24 24"
+																									version="1.1">
+																									<g stroke="none"
+																										stroke-width="1"
+																										fill="none"
+																										fill-rule="evenodd">
+																										<rect x="0"
+																											y="0"
+																											width="24"
+																											height="24" />
+																										<circle
+																											fill="#000000"
+																											cx="5"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="12"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="19"
+																											cy="12"
+																											r="2" />
+																									</g>
+																								</svg>
+																							</button>
+																							<div class="dropdown-menu">
+																								<a class="dropdown-item"
+																									href="#">Desativar</a>
+																								<a class="dropdown-item"
+																									href="#">Editar</a>
+																								<a class="dropdown-item"
+																									href="#">Excluir</a>
+																							</div>
+																						</div>
+																					</td>
+																				</tr>
+
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+														<div class="tab-pane p-3" id="paginas-1" role="tabpanel">
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-body">
+																	<p class="font-14 mb-0">
+																		<label for="example-text-input"
+																			class="mt-0 header-title">Páginas</label>
+																		<input class="form-control" type="text"
+																			value="www.pagina.com.br"
+																			id="example-text-input"
+																			style="width: 300px; margin-bottom: 10px;">
+																	</p>
+																	<p class="font-14 mb-0">
+																		<label for="example-text-input"
+																			class="mt-0 header-title">Esse produto tem
+																			uma página de obrigado personalizada ou
+																			upsell?</label>
+																		<div
+																			class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																			<input type="checkbox"
+																				class="custom-control-input"
+																				id="customSwitchUpsell">
+																			<label class="custom-control-label"
+																				for="customSwitchUpsell"></label>
+																		</div>
+																	</p>
+																	<p class="font-14 mb-0">
+																		<label for="example-text-input"
+																			class="mt-0 header-title">Cartão
+																			aprovado</label>
+																		<input class="form-control" type="text"
+																			value="www.pagina.com.br/obrigado"
+																			id="example-text-input"
+																			style="width: 300px; margin-bottom: 10px;">
+																	</p>
+
+																	<!-- Button trigger modal -->
+																	<button type="button" class="btn btn-primary mb-2"
+																		data-toggle="modal"
+																		data-target="#geradorUpsell">Gerador de
+																		UPSELL</button>
+																	<!-- Modal -->
+																	<div class="modal fade" id="geradorUpsell">
+																		<div class="modal-dialog">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h5 class="modal-title">Gerador de
+																						UPSELL</h5>
+																					<button type="button" class="close"
+																						data-dismiss="modal"><span>&times;</span>
+																					</button>
+																				</div>
+																				<div class="modal-body">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Produto
+																						upsell</label>
+																					<select class="form-control"
+																						style="width: 300px; margin-bottom: 10px;">
+																						<option>Selecione</option>
+																						<option>Lista de produtos
+																						</option>
+																					</select>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Oferta
+																						upsell</label>
+																					<select class="form-control"
+																						style="width: 300px; margin-bottom: 10px;">
+																						<option>Selecione</option>
+																						<option>Lista de ofertas
+																						</option>
+																					</select>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Ao
+																						aceitar a upsell</label>
+																					<select class="form-control"
+																						style="width: 300px; margin-bottom: 10px;">
+																						<option>Selecione</option>
+																						<option>Redirecionar para área
+																							de membros</option>
+																						<option>Oferecer outra upsell
+																						</option>
+																					</select>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">URL da
+																						próxima upsell</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Ao
+																						recusar a upsell</label>
+																					<select class="form-control"
+																						style="width: 300px; margin-bottom: 10px;">
+																						<option>Redirecionar para área
+																							de membros</option>
+																						<option>Oferecer downsell
+																						</option>
+																					</select>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">URL da
+																						downsell</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Texto
+																						aceitar upsell</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Texto
+																						recusar upsell</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					    
+																							
+																								<div class="example">
+																									<p class="mb-1">Simple mode</p>
+																									<div class="border-b">
+																										<input type="text" class="as_colorpicker border-color" value="#7ab2fa">
+																									</div>
+																								</div>
+																							
+																							
+																						
+																					
+
+																					<div class="col-md-12"
+																						style="border: 2px solid #80ffff; border-style: dashed; margin-top: 15px;">
+
+																						<div class="col-md-12"
+																							style="text-align: center; margin-top: 20px;">
+																							<button type="button"
+																								class="btn  btn-square btn-danger">SIM,
+																								eu aceito essa oferta
+																								especial!</button>
+																						</div>
+
+																						<div class="col-md-12"
+																							style="text-align: center; margin-top: 10px; font-size: 14px;">
+																							<p>
+																								Não, eu gostaria de
+																								recusar essa oferta
+																							</p>
+																						</div>
+
+																					</div>
+																				</div>
+																				<div class="modal-footer">
+																					<button type="button"
+																						class="btn btn-danger light"
+																						data-dismiss="modal">Fechar</button>
+																					<button type="button"
+																						class="btn btn-primary">Copiar
+																						HTML</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	</p>
+																	<p class="font-14 mb-0">
+
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="tab-pane p-3" id="checkout-1" role="tabpanel">
+
+
+
+
+														</div>
+														<div class="tab-pane p-3" id="coproducao-1" role="tabpanel">
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-header">
+																	<h4 class="card-title">CO-PRODUÇÃO</h4>
+																	<button type="button" class="btn btn-primary mb-2"
+																		data-toggle="modal"
+																		data-target="#modalCoProdutor">Convidar
+																		co-produtor</button>
+																	<!-- Modal -->
+																	<div class="modal fade" id="modalCoProdutor">
+																		<div class="modal-dialog">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h5 class="modal-title">Convidar
+																						Co-Produtor</h5>
+																					<button type="button" class="close"
+																						data-dismiss="modal"><span>&times;</span>
+																					</button>
+																				</div>
+																				<div class="modal-body">
+																					<label for="example-text-input"
+																						class="mt-0 header-title">E-mail
+																						do co-produtor</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Duração
+																						do contrato</label>
+																					<select class="form-control"
+																						style="width: 300px; margin-bottom: 10px;">
+																						<option>Selecione</option>
+																						<option>30 dias</option>
+																						<option>60 dias</option>
+																						<option>90 dias</option>
+																						<option>180 dias</option>
+																						<option>365 dias</option>
+																						<option>Eterno</option>
+																					</select>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Deve
+																						receber comissões de quais
+																						vendas?</label>
+																					<div class="form-group">
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									value="" checked>Do
+																								produtor
+																							</label>
+																						</div>
+																						<div
+																							class="form-check form-check-inline">
+																							<label
+																								class="form-check-label">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									value="">Do afiliado
+																							</label>
+																						</div>
+
+																					</div>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Comissão
+																						(%)</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Dividir
+																						responsabilidade de emissão das
+																						notas fiscais com esse
+																						co-produtor?</label>
+																					<div
+																						class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																						<input type="checkbox"
+																							class="custom-control-input"
+																							id="customSwitchCoprodutorDivisao">
+																						<label
+																							class="custom-control-label"
+																							for="customSwitchCoprodutorDivisao"></label>
+																					</div>
+
+
+
+
+
+
+																				</div>
+
+																				<div class="modal-footer">
+																					<button type="button"
+																						class="btn btn-danger light"
+																						data-dismiss="modal">Cancelar</button>
+																					<button type="button"
+																						class="btn btn-primary">Convidar</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="card-body">
+																	<div class="table-responsive">
+																		<table class="table table-responsive-md">
+																			<thead>
+																				<tr>
+																					<th>DATA</th>
+																					<th>NOME</th>
+																					<th>COMISSÃO</th>
+																					<th>VALIDADE</th>
+																					<th>STATUS</th>
+																					<th></th>
+																					<th>AÇÕES</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td>00/00/0000</td>
+																					<td>Gustavo Henrique da Silva</td>
+																					<td>30%</td>
+																					<td>00/00/0000</td>
+																					<td><span
+																							class="badge light badge-success">Ativo</span>
+																					</td>
+																					<td></td>
+																					<td>
+																						<div class="dropdown">
+																							<button type="button"
+																								class="btn btn-success light sharp"
+																								data-toggle="dropdown">
+																								<svg width="20px"
+																									height="20px"
+																									viewBox="0 0 24 24"
+																									version="1.1">
+																									<g stroke="none"
+																										stroke-width="1"
+																										fill="none"
+																										fill-rule="evenodd">
+																										<rect x="0"
+																											y="0"
+																											width="24"
+																											height="24" />
+																										<circle
+																											fill="#000000"
+																											cx="5"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="12"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="19"
+																											cy="12"
+																											r="2" />
+																									</g>
+																								</svg>
+																							</button>
+																							<div class="dropdown-menu">
+																								<a class="dropdown-item"
+																									href="#">Editar</a>
+																								<a class="dropdown-item"
+																									href="#">Excluir</a>
+																							</div>
+																						</div>
+																					</td>
+																				</tr>
+
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+															</div>
+
+
+														</div>
+														<div class="tab-pane p-3" id="afiliados-1" role="tabpanel">
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-body">
+																	<h4 class="card-title">AFILIADOS</h4>
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Habilitar programa de
+																		afiliados</label>
+																	<div
+																		class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																		<input type="checkbox"
+																			class="custom-control-input"
+																			id="customSwitchAfiliados">
+																		<label class="custom-control-label"
+																			for="customSwitchAfiliados"></label>
+																	</div>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Aprovar cada
+																		solicitação de afiliação manualmente</label>
+																	<div
+																		class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																		<input type="checkbox"
+																			class="custom-control-input"
+																			id="customSwitchAfiliadosAprovacao">
+																		<label class="custom-control-label"
+																			for="customSwitchAfiliadosAprovacao"></label>
+																	</div>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Solicitar estratégias
+																		de vendas</label>
+																	<div
+																		class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																		<input type="checkbox"
+																			class="custom-control-input"
+																			id="customSwitchAfiliadosEstrategia">
+																		<label class="custom-control-label"
+																			for="customSwitchAfiliadosEstrategia"></label>
+																	</div>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Receber notificações
+																		via e-mail para cada solicitação</label>
+																	<div
+																		class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																		<input type="checkbox"
+																			class="custom-control-input"
+																			id="customSwitchAfiliadosNotificacoes">
+																		<label class="custom-control-label"
+																			for="customSwitchAfiliadosNotificacoes"></label>
+																	</div>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Liberar acesso aos
+																		dados de contato dos compradores</label>
+																	<div
+																		class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																		<input type="checkbox"
+																			class="custom-control-input"
+																			id="customSwitchAfiliadosAcesso">
+																		<label class="custom-control-label"
+																			for="customSwitchAfiliadosAcesso"></label>
+																	</div>
+
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">E-mail de suporte para
+																		afiliados</label>
+																	<input class="form-control" type="text" value=""
+																		id="example-text-input"
+																		style="width: 300px; margin-bottom: 10px;">
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Descrição para
+																		afiliados:</label>
+																	<textarea id="textarea" class="form-control"
+																		maxlength="225" rows="3" placeholder=""
+																		style="width: 500px; margin-bottom: 10px;"></textarea>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Comissão (%)</label>
+																	<input class="form-control" type="text" value=""
+																		id="example-text-input"
+																		style="width: 300px; margin-bottom: 10px;">
+
+																	<div class="col-md-10"
+																		style="border: rgb(193, 255, 255) 1px solid;">
+																		<select class="form-control"
+																			style="width: 300px; margin-top: 10px;">
+																			<option>Oferta</option>
+																		</select>
+																		<div class="row">
+																			<div class="col-md-5">
+																				<p><strong>Sem afiliado</strong></br>
+																					Preço: R$ 100,00</br>
+																					Taxa Plataforma: R$ 4,99</br>
+																					Você: 95,01
+																				</p>
+																			</div>
+
+																			<div class="col-md-5">
+																				<p><strong>Com afiliado</strong></br>
+																					Preço: R$ 100,00</br>
+																					Taxa Plataforma: R$ 4,99</br>
+																					Afiliado: 28,50</br>
+																					Você: 66,5</br>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Atribuição</label>
+																	<div class="row" style="margin-bottom: 10px;">
+																		<div class="form-check"
+																			style="margin-left: 12px;">
+																			<input class="form-check-input" type="radio"
+																				name="gridRadios" value="option1"
+																				checked>
+																			<label class="form-check-label">
+																				Último clique (recomendado)
+																			</label>
+																		</div>
+																		<div class="form-check"
+																			style="margin-left: 10px;">
+																			<input class="form-check-input" type="radio"
+																				name="gridRadios" value="option2">
+																			<label class="form-check-label">
+																				Primeiro clique
+																			</label>
+																		</div>
+
+																	</div>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Duração dos
+																		cookies</label>
+																	<select class="form-control"
+																		style="width: 300px; margin-bottom: 10px;">
+																		<option>Selecione</option>
+																		<option>30 dias</option>
+																		<option>60 dias</option>
+																		<option>90 dias</option>
+																		<option>180 dias</option>
+																		<option>365 dias</option>
+																		<option>Eterno</option>
+																	</select>
+
+																</div>
+
+															</div>
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-body">
+																	<h4 class="card-title">COPIAR LINK DE CONVITE DE
+																		AFILIADO</h4>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Compartilhe esse link
+																		para convidar os seus afiliados</label>
+																	<input class="form-control" type="text" value=""
+																		id="example-text-input"
+																		style="width: 300px; margin-bottom: 10px;">
+
+																	<button type="button"
+																		class="btn light btn-primary">Copiar</button>
+
+																</div>
+															</div>
+
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-body">
+																	<h4 class="card-title">GERENTE DE AFILIADOS</h4>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Habilitar gerente de
+																		afiliados</br><span style="font-size: 12px;">O
+																			afiliado que indicar outro afiliado receberá
+																			comissão das vendas efetuadas pelos
+																			indicados</span></label>
+																	<div
+																		class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																		<input type="checkbox"
+																			class="custom-control-input"
+																			id="customSwitchGerenteAfiliados">
+																		<label class="custom-control-label"
+																			for="customSwitchGerenteAfiliados"></label>
+																	</div>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Quantidade mínima de
+																		vendas que o afiliado precisa fazer para
+																		habilitar a função gerente de afiliados</label>
+																	<input class="form-control" type="text" value=""
+																		id="example-text-input"
+																		style="width: 300px; margin-bottom: 10px;">
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Tipo de
+																		comissionamento de recrutamento</label>
+																	<select class="form-control"
+																		style="width: 300px; margin-bottom: 10px;">
+																		<option>Selecione</option>
+																		<option>Valor</option>
+																		<option>Porcentagem</option>
+																	</select>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Valor/Porcentagem da
+																		comissão</label>
+																	<input class="form-control" type="text" value=""
+																		id="example-text-input"
+																		style="width: 300px; margin-bottom: 10px;">
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Máximo de
+																		vendas</label>
+																	<input class="form-control" type="text" value=""
+																		id="example-text-input"
+																		style="width: 300px; margin-bottom: 10px;">
+
+																	<div class="custom-control custom-checkbox mb-3">
+																		<input type="checkbox"
+																			class="custom-control-input"
+																			id="customCheckBox1" required>
+																		<label class="custom-control-label"
+																			for="customCheckBox1">Ilimitadas</label>
+																	</div>
+
+																</div>
+															</div>
+
+
+														</div>
+
+
+
+														<div class="tab-pane p-3" id="links-1" role="tabpanel">
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-header">
+																	<h4 class="card-title">LINKS</h4>
+																	<button type="button" class="btn btn-primary mb-2"
+																		data-toggle="modal"
+																		data-target="#modalLinks">Adicionar
+																		link</button>
+																	<!-- Modal -->
+																	<div class="modal fade" id="modalLinks">
+																		<div class="modal-dialog">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h5 class="modal-title">Adicionar
+																						link</h5>
+																					<button type="button" class="close"
+																						data-dismiss="modal"><span>&times;</span>
+																					</button>
+																				</div>
+																				<div class="modal-body">
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Nome
+																						do link</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">URL de
+																						destino</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+
+																				</div>
+																				<div class="modal-footer">
+																					<button type="button"
+																						class="btn btn-danger light"
+																						data-dismiss="modal">Cancelar</button>
+																					<button type="button"
+																						class="btn btn-primary">Adicionar</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="card-body">
+																	<div class="table-responsive">
+																		<table class="table table-responsive-md">
+																			<thead>
+																				<tr>
+																					<th>NOME</th>
+																					<th>URL PLATAFORMA</th>
+																					<th>TIPO</th>
+																					<th>PREÇO</th>
+																					<th>STATUS</th>
+																					<th></th>
+																					<th>AÇÕES</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td>00/00/0000</td>
+																					<td contenteditable='true'>
+																						https://www.plataformacampeao.com.br
+																					</td>
+																					<td><span
+																							class="badge light badge-success">Checkout</span>
+																					</td>
+																					<td>R$ 1.000,00</td>
+																					<td><span
+																							class="badge light badge-success">Ativo</span>
+																					</td>
+																					<td></td>
+																					<td>
+																						<div class="dropdown">
+																							<button type="button"
+																								class="btn btn-success light sharp"
+																								data-toggle="dropdown">
+																								<svg width="20px"
+																									height="20px"
+																									viewBox="0 0 24 24"
+																									version="1.1">
+																									<g stroke="none"
+																										stroke-width="1"
+																										fill="none"
+																										fill-rule="evenodd">
+																										<rect x="0"
+																											y="0"
+																											width="24"
+																											height="24" />
+																										<circle
+																											fill="#000000"
+																											cx="5"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="12"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="19"
+																											cy="12"
+																											r="2" />
+																									</g>
+																								</svg>
+																							</button>
+																							<div class="dropdown-menu">
+																								<a class="dropdown-item"
+																									href="#">Esconder
+																									dos afiliados</a>
+																								<a class="dropdown-item"
+																									href="#">Desabilitar</a>
+																								<a class="dropdown-item"
+																									href="#">Editar</a>
+																							</div>
+																						</div>
+																					</td>
+																				</tr>
+
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+															</div>
+
+
+														</div>
+
+														<!--<div class="tab-pane p-3" id="aplicativos-1" role="tabpanel">
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-body">
+																	<h4 class="card-title">APLICATIVOS</h4>
+																	<div class="col-md-12 d-flex justify-content-between">
+																		<div class="col-md-4">
+																			<h4 class="card-title">WHATSAPP</h4>
+																			<label for="example-text-input"
+																			class="mt-0 header-title">Habilitar botão de WhatsApp no checkout da oferta</label>
+																			<div class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																				<input type="checkbox"
+																					class="custom-control-input"
+																					id="customSwitchWhatsappCheckout">
+																				<label class="custom-control-label"
+																					for="customSwitchWhatsappCheckout"></label>
+																			</div>
+
+																			
+																			<label for="example-text-input"
+																					class="mt-0 header-title">Número para contato</label>
+																				<input class="form-control" type="text"
+																					value=""
+																					id="example-text-input"
+																					style="width: 300px; margin-bottom: 10px;">
+																		</div>
+																		
+																		<div class="col-md-4" >
+																			<h4 class="card-title">CHAT NO CHECKOUT</h4>
+																			<label for="example-text-input"
+																			class="mt-0 header-title">Habilitar chat</label>
+																			<div class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																				<input type="checkbox"
+																					class="custom-control-input"
+																					id="customSwitchChatCheckout">
+																				<label class="custom-control-label"
+																					for="customSwitchChatCheckout"></label>
+																			</div>
+
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Selecione o chat</label>
+																			<select class="form-control"
+																				style="width: 300px; margin-bottom: 10px;">
+																				<option>Selecione</option>
+																				<option>Zopim</option>
+																				<option>Tawk.to</option>
+																				<option>Zendesk</option>
+																				<option>JivoChat</option>
+																			</select>
+																			
+
+																		</div>
+																		<div class="col-md-4">
+																			<h4 class="card-title">CONFIGURAR TIMER</h4>
+																			<label for="example-text-input"
+																			class="mt-0 header-title">Habilitar timer</label>
+																			<div class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																				<input type="checkbox" class="custom-control-input" id="customSwitchTimeCheckout">
+																				<label class="custom-control-label" for="customSwitchTimeCheckout"></label>
+																			</div>
+
+																			<label for="example-text-input"
+																				class="mt-0 header-title">Funcionamento do time</label>
+																			<select class="form-control"
+																				style="width: 300px; margin-bottom: 10px;">
+																				<option>Selecione</option>
+																				<option>Reiniciar em cada carregamento de página.</option>
+																				<option>Manter o tempo real, e manter zerado eternamente após o fim.</option>
+																				<option>Manter o tempo real, e caso esteja zerado ao recarregar, reiniciar a contagem.</option>
+																			</select>
+
+																			<label for="example-text-input" class="mt-0 header-title">Texto</label>
+																				<input class="form-control" type="text" value="" id="example-text-input" style="width: 300px; margin-bottom: 10px;">
+
+																			<label for="example-text-input" class="mt-0 header-title">Tempo em minutos</label>
+																				<input class="form-control" type="text" value="" id="example-text-input" style="width: 300px; margin-bottom: 10px;">
+																		
+
+																		</div>
+																	</div>
+
+																	<div class="col-md-12 d-flex justify-content-between">
+
+																		<div class="col-md-4">
+																			<h4 class="card-title">CONFIGURAR NOTIFICAÇÕES</h4>
+																			<label for="example-text-input"
+																			class="mt-0 header-title">Exibir balões de notificações</label>
+																			<div class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																				<input type="checkbox" class="custom-control-input" id="customSwitchNotificacoesCheckout">
+																				<label class="custom-control-label" for="customSwitchNotificacoesCheckout"></label>
+																			</div>
+
+																			<label for="example-text-input" class="mt-0 header-title">Como exibir o nome do produto</label>
+																				<input class="form-control" type="text" value="" id="example-text-input" style="width: 300px; margin-bottom: 10px;">
+
+																			
+																		
+
+																		</div>
+
+																		
+																	</div>
+																	
+																</div>
+																
+															</div>
+															
+														</div>-->
+
+
+
+														<div class="tab-pane p-3" id="pixels-1" role="tabpanel">
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-header">
+																	<h4 class="card-title">FACEBOOK</h4>
+																	<button type="button" class="btn btn-primary mb-2"
+																		data-toggle="modal"
+																		data-target="#adicionarDominio">Adicionar
+																		domínio</button>
+																	<!-- Modal -->
+																	<div class="modal fade" id="adicionarDominio">
+																		<div class="modal-dialog">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h5 class="modal-title">Adicionar
+																						domínio</h5>
+																					<button type="button" class="close"
+																						data-dismiss="modal"><span>&times;</span>
+																					</button>
+																				</div>
+																				<div class="modal-body">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Domínio</label>
+																					<input class="form-control"
+																						type="text"
+																						placeholder="seudominio.com.br"
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<div class="card text-white bg-info"
+																						style="margin-top: 10px;">
+																						<div class="card-body mb-0">
+																							<p class="card-text">Visite
+																								o painel de
+																								configurações de DNS do
+																								seu domínio</p>
+																						</div>
+																					</div>
+
+																					<div class="card text-white bg-info"
+																						style="margin-top: 10px;">
+																						<div class="card-body mb-0">
+																							<p class="card-text">Crie um
+																								registro CNAME com o
+																								valor
+																								pixels.seudominio.com
+																								apontando para
+																								pixels.plataformacampeao.com
+																							</p>
+																						</div>
+																					</div>
+
+																					<div class="card text-white bg-info"
+																						style="margin-top: 10px;">
+																						<div class="card-body mb-0">
+																							<p class="card-text">Salve o
+																								DNS</p>
+																						</div>
+																					</div>
+
+
+
+																				</div>
+																				<div class="modal-footer">
+																					<button type="button"
+																						class="btn btn-danger light"
+																						data-dismiss="modal">Cancelar</button>
+																					<button type="button"
+																						class="btn btn-primary">Confirmar</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="card-body">
+
+																	<div class="col-md-12 row">
+																		<div class="col-md-5">Pixel</div>
+																		<div class="col-md-5">Domínio</div>
+																	</div>
+																	<div class="col-md-12 row">
+																		<div class="col-md-5">
+																			<input class="form-control" type="text"
+																				value="" id="example-text-input"
+																				style="width: 300px; margin-bottom: 10px;">
+																		</div>
+																		<div class="col-md-5 row">
+																			<div class="row">
+																				<select class="form-control"
+																				style="width: 250px; margin-bottom: 10px;">
+																				<option>pixel.plataformacampeao.com
+																				</option>
+																			</select>
+																			<button  type="button" data-toggle="modal"
+																				data-target="#configurarPixel"class="border-0 p-2 bg-transparent"><i
+																					class="flaticon-381-settings-5"
+																					style="font-size: 18px;"></i></button>
+																					<div class="buttom-xx">X</div>
+																			</div>
+																			
+																			<!-- Modal -->
+																			<div class="modal fade"
+																				id="configurarPixel">
+																				<div class="modal-dialog">
+																					<div class="modal-content">
+																						<div class="modal-header">
+																							<h5 class="modal-title">
+																								Adicionar domínio</h5>
+																							<button type="button"
+																								class="close"
+																								data-dismiss="modal"><span>&times;</span>
+																							</button>
+																						</div>
+																						<div class="modal-body">
+
+																							<label
+																								for="example-text-input"
+																								class="mt-0 header-title">Pixel
+																								ID</label>
+																							<input class="form-control"
+																								type="text"
+																								placeholder="Ex.: 4578787878"
+																								id="example-text-input"
+																								style="margin-bottom: 10px;">
+
+																							<label
+																								for="example-text-input"
+																								class="mt-0 header-title">Domínio</label>
+																							<select class="form-control"
+																								style="width: 300px; margin-bottom: 10px;">
+																								<option>Selecione
+																								</option>
+																							</select>
+
+																							<label
+																								for="example-text-input"
+																								class="mt-0 header-title">Token
+																								da API de Conversão
+																								(opcional)</label>
+																							<textarea id="textarea"
+																								class="form-control"
+																								maxlength="225" rows="3"
+																								placeholder=""
+																								style="margin-bottom: 10px;"></textarea>
+
+
+																						</div>
+																						<div class="modal-footer">
+																							<button type="button"
+																								class="btn btn-danger light"
+																								data-dismiss="modal">Cancelar</button>
+																							<button type="button"
+																								class="btn btn-primary">Salvar
+																								alterações</button>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-md-10">
+																		<button type="button" class="btn btn-primary"
+																			style="margin-bottom: 10px;">Adicionar
+																			outro</button>
+																	</div>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Disparar evento
+																		«Purchase» ao gerar um boleto?</label>
+																	<div
+																		class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																		<input type="checkbox"
+																			class="custom-control-input"
+																			id="customSwitchPixelFacebook">
+																		<label class="custom-control-label"
+																			for="customSwitchPixelFacebook"></label>
+																	</div>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Valor de conversão
+																		personalizado para boleto (%)</label>
+																	<input class="form-control" type="text"
+																		id="example-text-input"
+																		style="width: 150px; margin-bottom: 10px;">
+
+
+																</div>
+
+															</div>
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-header">
+																	<h4 class="card-title">GOOGLE ADS</h4>
+																	<button type="button" class="btn btn-primary mb-2"
+																		data-toggle="modal"
+																		data-target="#pixelGoogleAds">Adicionar google
+																		pixel</button>
+																	<!-- Modal -->
+																	<div class="modal fade" id="pixelGoogleAds">
+																		<div class="modal-dialog">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h5 class="modal-title">ADICIONAR
+																						GOOGLE ADS PIXEL</h5>
+																					<button type="button" class="close"
+																						data-dismiss="modal"><span>&times;</span>
+																					</button>
+																				</div>
+																				<div class="modal-body">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Nome</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">ID do
+																						Pixel Google Ads</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Label
+																						de conversão</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Disparar
+																						ao visitar checkout</label>
+																					<div
+																						class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																						<input type="checkbox"
+																							class="custom-control-input"
+																							id="customSwitchGoogleAdsVisitaCheckout">
+																						<label
+																							class="custom-control-label"
+																							for="customSwitchGoogleAdsVisitaCheckout"></label>
+																					</div>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Disparar
+																						ao aprovar cartão / pix</label>
+																					<div
+																						class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																						<input type="checkbox"
+																							class="custom-control-input"
+																							id="customSwitchGoogleAdsAprovarCartaoPix">
+																						<label
+																							class="custom-control-label"
+																							for="customSwitchGoogleAdsAprovarCartaoPix"></label>
+																					</div>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Disparar
+																						ao gerar boleto</label>
+																					<div
+																						class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																						<input type="checkbox"
+																							class="custom-control-input"
+																							id="customSwitchGoogleAdsDisparoBoleto">
+																						<label
+																							class="custom-control-label"
+																							for="customSwitchGoogleAdsDisparoBoleto"></label>
+																					</div>
+
+
+
+
+																				</div>
+																				<div class="modal-footer">
+																					<button type="button"
+																						class="btn btn-danger light"
+																						data-dismiss="modal">Cancelar</button>
+																					<button type="button"
+																						class="btn btn-primary">ADICIONAR
+																						GOOGLE ADS PIXEL</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="card-body">
+																	<div class="table-responsive">
+																		<table class="table table-responsive-md">
+																			<thead>
+																				<tr>
+																					<th>NOME</th>
+																					<th></th>
+																					<th></th>
+																					<th>PIXEL ID</th>
+																					<th></th>
+																					<th></th>
+																					<th>AÇÕES</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td>PIXEL 1</td>
+																					<td></td>
+																					<td></td>
+																					<td>4548979846513216546</td>
+																					<td></td>
+																					<td></td>
+																					<td>
+																						<div class="dropdown">
+																							<button type="button"
+																								class="btn btn-success light sharp"
+																								data-toggle="dropdown">
+																								<svg width="20px"
+																									height="20px"
+																									viewBox="0 0 24 24"
+																									version="1.1">
+																									<g stroke="none"
+																										stroke-width="1"
+																										fill="none"
+																										fill-rule="evenodd">
+																										<rect x="0"
+																											y="0"
+																											width="24"
+																											height="24" />
+																										<circle
+																											fill="#000000"
+																											cx="5"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="12"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="19"
+																											cy="12"
+																											r="2" />
+																									</g>
+																								</svg>
+																							</button>
+																							<div class="dropdown-menu">
+																								<a class="dropdown-item"
+																									href="#">Editar</a>
+																								<a class="dropdown-item"
+																									href="#">Excluir</a>
+																							</div>
+																						</div>
+																					</td>
+																				</tr>
+
+																			</tbody>
+																		</table>
+																	</div>
+
+
+
+																</div>
+
+															</div>
+
+
+
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-body">
+																	<h4 class="card-title">GOOGLE ANALYTICS</h4>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Google Analytics
+																		Tracking ID:</label>
+																	<input class="form-control" type="text"
+																		id="example-text-input"
+																		style="width: 300px; margin-bottom: 10px;">
+																</div>
+
+															</div>
+
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-header">
+																	<h4 class="card-title">TIK TOK</h4>
+
+																</div>
+
+																<div class="card-body">
+
+																	<div class="col-md-12 row">
+																		<div class="col-md-5">Pixel</div>
+																	</div>
+																	<div class="col-md-12 row">
+																		<div class="col-md-5">
+																			<input class="form-control" type="text"
+																				value="" id="example-text-input"
+																				style="width: 300px; margin-bottom: 10px;">
+																		</div>
+																	</div>
+																	<div class="col-md-10">
+																		<button type="button" class="btn btn-primary"
+																			style="margin-bottom: 10px;">Adicionar
+																			outro</button>
+																	</div>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Disparar evento
+																		«Purchase» ao gerar um boleto?</label>
+																	<div
+																		class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																		<input type="checkbox"
+																			class="custom-control-input"
+																			id="customSwitchPixelFacebook">
+																		<label class="custom-control-label"
+																			for="customSwitchPixelFacebook"></label>
+																	</div>
+
+																	<label for="example-text-input"
+																		class="mt-0 header-title">Valor de conversão
+																		personalizado para boleto (%)</label>
+																	<input class="form-control" type="text"
+																		id="example-text-input"
+																		style="width: 150px; margin-bottom: 10px;">
+
+
+																</div>
+
+
+
+
+
+
+															</div>
+
+
+
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-header">
+																	<h4 class="card-title">TABOOLA</h4>
+																	<button type="button" class="btn btn-primary mb-2"
+																		data-toggle="modal"
+																		data-target="#pixelTaboola">Adicionar taboola
+																		pixel</button>
+																	<!-- Modal -->
+																	<div class="modal fade" id="pixelTaboola">
+																		<div class="modal-dialog">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h5 class="modal-title">ADICIONAR
+																						TABOOLA PIXEL</h5>
+																					<button type="button" class="close"
+																						data-dismiss="modal"><span>&times;</span>
+																					</button>
+																				</div>
+																				<div class="modal-body">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Account
+																						ID</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Event
+																						name</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Disparar
+																						ao visitar checkout</label>
+																					<div
+																						class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																						<input type="checkbox"
+																							class="custom-control-input"
+																							id="customSwitchTaboolaVisitaCheckout">
+																						<label
+																							class="custom-control-label"
+																							for="customSwitchTaboolaVisitaCheckout"></label>
+																					</div>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Disparar
+																						ao aprovar cartão / pix</label>
+																					<div
+																						class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																						<input type="checkbox"
+																							class="custom-control-input"
+																							id="customSwitchTaboolaAprovarCartaoPix">
+																						<label
+																							class="custom-control-label"
+																							for="customSwitchTaboolaAprovarCartaoPix"></label>
+																					</div>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Disparar
+																						ao gerar boleto</label>
+																					<div
+																						class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																						<input type="checkbox"
+																							class="custom-control-input"
+																							id="customSwitchTaboolaDisparoBoleto">
+																						<label
+																							class="custom-control-label"
+																							for="customSwitchTaboolaDisparoBoleto"></label>
+																					</div>
+
+
+
+
+																				</div>
+																				<div class="modal-footer">
+																					<button type="button"
+																						class="btn btn-danger light"
+																						data-dismiss="modal">Cancelar</button>
+																					<button type="button"
+																						class="btn btn-primary">ADICIONAR
+																						TABOOLA PIXEL</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="card-body">
+																	<div class="table-responsive">
+																		<table class="table table-responsive-md">
+																			<thead>
+																				<tr>
+																					<th>NOME</th>
+																					<th></th>
+																					<th></th>
+																					<th>PIXEL ID</th>
+																					<th></th>
+																					<th></th>
+																					<th>AÇÕES</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td>PIXEL 1</td>
+																					<td></td>
+																					<td></td>
+																					<td>4548979846513216546</td>
+																					<td></td>
+																					<td></td>
+																					<td>
+																						<div class="dropdown">
+																							<button type="button"
+																								class="btn btn-success light sharp"
+																								data-toggle="dropdown">
+																								<svg width="20px"
+																									height="20px"
+																									viewBox="0 0 24 24"
+																									version="1.1">
+																									<g stroke="none"
+																										stroke-width="1"
+																										fill="none"
+																										fill-rule="evenodd">
+																										<rect x="0"
+																											y="0"
+																											width="24"
+																											height="24" />
+																										<circle
+																											fill="#000000"
+																											cx="5"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="12"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="19"
+																											cy="12"
+																											r="2" />
+																									</g>
+																								</svg>
+																							</button>
+																							<div class="dropdown-menu">
+																								<a class="dropdown-item"
+																									href="#">Editar</a>
+																								<a class="dropdown-item"
+																									href="#">Excluir</a>
+																							</div>
+																						</div>
+																					</td>
+																				</tr>
+
+																			</tbody>
+																		</table>
+																	</div>
+
+
+
+																</div>
+
+
+															</div>
+
+
+															<div class="card"
+																style="border: rgb(193, 255, 255) 1px solid;">
+																<div class="card-header">
+																	<h4 class="card-title">OUTBRAIN</h4>
+																	<button type="button" class="btn btn-primary mb-2"
+																		data-toggle="modal"
+																		data-target="#pixelOutbrain">Adicionar outbrain
+																		pixel</button>
+																	<!-- Modal -->
+																	<div class="modal fade" id="pixelOutbrain">
+																		<div class="modal-dialog">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h5 class="modal-title">ADICIONAR
+																						OUTBRAIN PIXEL</h5>
+																					<button type="button" class="close"
+																						data-dismiss="modal"><span>&times;</span>
+																					</button>
+																				</div>
+																				<div class="modal-body">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Pixel
+																						ID (OB_ADV_ID)</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Event
+																						name</label>
+																					<input class="form-control"
+																						type="text" value=""
+																						id="example-text-input"
+																						style="margin-bottom: 10px;">
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Disparar
+																						ao visitar checkout</label>
+																					<div
+																						class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																						<input type="checkbox"
+																							class="custom-control-input"
+																							id="customSwitchOutbrainVisitaCheckout">
+																						<label
+																							class="custom-control-label"
+																							for="customSwitchOutbrainVisitaCheckout"></label>
+																					</div>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Disparar
+																						ao aprovar cartão / pix</label>
+																					<div
+																						class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																						<input type="checkbox"
+																							class="custom-control-input"
+																							id="customSwitchOutbrainAprovarCartaoPix">
+																						<label
+																							class="custom-control-label"
+																							for="customSwitchOutbrainAprovarCartaoPix"></label>
+																					</div>
+
+																					<label for="example-text-input"
+																						class="mt-0 header-title">Disparar
+																						ao gerar boleto</label>
+																					<div
+																						class="custom-control custom-switch toggle-switch text-left mr-4 mb-2">
+																						<input type="checkbox"
+																							class="custom-control-input"
+																							id="customSwitchOutbrainDisparoBoleto">
+																						<label
+																							class="custom-control-label"
+																							for="customSwitchOutbrainDisparoBoleto"></label>
+																					</div>
+
+
+
+
+																				</div>
+																				<div class="modal-footer">
+																					<button type="button"
+																						class="btn btn-danger light"
+																						data-dismiss="modal">Cancelar</button>
+																					<button type="button"
+																						class="btn btn-primary">ADICIONAR
+																						OUTBRAIN PIXEL</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="card-body">
+																	<div class="table-responsive">
+																		<table class="table table-responsive-md">
+																			<thead>
+																				<tr>
+																					<th>NOME</th>
+																					<th></th>
+																					<th></th>
+																					<th>PIXEL ID</th>
+																					<th></th>
+																					<th></th>
+																					<th>AÇÕES</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td>PIXEL 1</td>
+																					<td></td>
+																					<td></td>
+																					<td>4548979846513216546</td>
+																					<td></td>
+																					<td></td>
+																					<td>
+																						<div class="dropdown">
+																							<button type="button"
+																								class="btn btn-success light sharp"
+																								data-toggle="dropdown">
+																								<svg width="20px"
+																									height="20px"
+																									viewBox="0 0 24 24"
+																									version="1.1">
+																									<g stroke="none"
+																										stroke-width="1"
+																										fill="none"
+																										fill-rule="evenodd">
+																										<rect x="0"
+																											y="0"
+																											width="24"
+																											height="24" />
+																										<circle
+																											fill="#000000"
+																											cx="5"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="12"
+																											cy="12"
+																											r="2" />
+																										<circle
+																											fill="#000000"
+																											cx="19"
+																											cy="12"
+																											r="2" />
+																									</g>
+																								</svg>
+																							</button>
+																							<div class="dropdown-menu">
+																								<a class="dropdown-item"
+																									href="#">Editar</a>
+																								<a class="dropdown-item"
+																									href="#">Excluir</a>
+																							</div>
+																						</div>
+																					</td>
+																				</tr>
+
+																			</tbody>
+																		</table>
+																	</div>
+
+
+
+																</div>
+
+
+
+
+															</div>
+
+
+
+
+
+														</div>
+
+													</div>
+													<div class="btn-group float-right">
+														<ol class="breadcrumb hide-phone p-0 m-0">
+															<li class="breadcrumb-item active"><button type="button"
+																	class="btn btn-primary waves-effect waves-light">Salvar
+																	produto</button>
+															</li>
+														</ol>
+													</div>
+
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+            Content body end
+        ***********************************-->
+
+		<!--**********************************
+            Footer start
+        ***********************************-->
+		<div class="footer">
+			<div class="copyright">
+				<p>Copyright © Plataforma Campeão</p>
+			</div>
+		</div>
+		<!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+	</div>
+	<!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+	<!--**********************************
+        Scripts
+    ***********************************-->
+	<!-- Required vendors -->
+	<script src="./vendor/global/global.min.js"></script>
+	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+	<script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+	<script src="./vendor/owl-carousel/owl.carousel.js"></script>
+
+	<!-- Chart piety plugin files -->
+	<script src="./vendor/peity/jquery.peity.min.js"></script>
+
+	<!-- Apex Chart -->
+	<script src="./vendor/apexchart/apexchart.js"></script>
+
+	<!-- Dropzone js -->
+	<script src="./assets/plugins/dropzone/dist/dropzone.js"></script>
+	<script src="./assets/plugins/dropify/js/dropify.min.js"></script>
+
+	<!-- asColorPicker -->
+	<script src="./vendor/jquery-asColor/jquery-asColor.min.js"></script>
+	<script src="./vendor/jquery-asGradient/jquery-asGradient.min.js"></script>
+	<script src="./vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js"></script>
+	<!-- Material color picker -->
+	<script src="./vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+	<!-- asColorPicker init -->
+	<script src="./js/plugins-init/jquery-asColorPicker.init.js"></script>
+	<!-- Material color picker init -->
+	<script src="./js/plugins-init/material-date-picker-init.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			// Basic
+			$('.dropify').dropify();
+
+			// Translated
+			$('.dropify-fr').dropify({
+				messages: {
+					default: 'Glissez-déposez un fichier ici ou cliquez',
+					replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+					remove: 'Supprimer',
+					error: 'Désolé, le fichier trop volumineux'
+				}
+			});
+
+			// Used events
+			var drEvent = $('#input-file-events').dropify();
+
+			drEvent.on('dropify.beforeClear', function (event, element) {
+				return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+			});
+
+			drEvent.on('dropify.afterClear', function (event, element) {
+				alert('File deleted');
+			});
+
+			drEvent.on('dropify.errors', function (event, element) {
+				console.log('Has Errors');
+			});
+
+			var drDestroy = $('#input-file-to-destroy').dropify();
+			drDestroy = drDestroy.data('dropify')
+			$('#toggleDropify').on('click', function (e) {
+				e.preventDefault();
+				if (drDestroy.isDropified()) {
+					drDestroy.destroy();
+				} else {
+					drDestroy.init();
+				}
+			})
+		});
+	</script>
+
+
+	<!-- Dashboard 1 -->
+	<script src="./js/dashboard/avalicao-script.js"></script>
+	<script src="./js/dashboard/dashboard-1.js"></script>
+	<script>
+		function carouselReview() {
+			/*  testimonial one function by = owl.carousel.js */
+			jQuery('.testimonial-one').owlCarousel({
+				loop: true,
+				autoplay: true,
+				margin: 30,
+				nav: false,
+				dots: false,
+				left: true,
+				navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+					'<i class="fa fa-chevron-right" aria-hidden="true"></i>'
+				],
+				responsive: {
+					0: {
+						items: 1
+					},
+					484: {
+						items: 2
+					},
+					882: {
+						items: 3
+					},
+					1200: {
+						items: 2
+					},
+
+					1540: {
+						items: 3
+					},
+					1740: {
+						items: 4
+					}
+				}
+			})
+		}
+		jQuery(window).on('load', function () {
+			setTimeout(function () {
+				carouselReview();
+			}, 1000);
+		});
+	</script>
+
+
+</body>
+
+</html>
