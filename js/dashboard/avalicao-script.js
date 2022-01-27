@@ -121,6 +121,7 @@ function openEditModalAssnPlan(index) {
     $('#formPlanAssing select[name="freqAssnPlan"]')[0].value = item.freqAssnPlan
     $('#formPlanAssing input[name="numCobrancaAssnPlan"]')[0].value = item.numCobrancaAssnPlan
 
+
     if(item.renovacaoAssnPlan == "1"){
         $('#formPlanAssing input[name="renovacaoAssnPlan"][value="1"]').prop("checked", true)
         $('#formPlanAssing input[name="renovacaoAssnPlan"][value="2"]').prop("checked", false)
@@ -180,7 +181,7 @@ function clearForm(){
     $('#formPlanAssing input[name="nomeAssnPlan"')[0].value = ''
     $('#formPlanAssing input[name="valorAssnPlan"')[0].value = ''
     $('#formPlanAssing select[name="freqAssnPlan"')[0].value = ''
-    $('#formPlanAssing input[name="renovacaoAssnPlan"')[0].value = ''
+    $('#formPlanAssing input[name="renovacaoAssnPlan"')[0].value = '1'
     $('#formPlanAssing input[name="numCobrancaAssnPlan"')[0].value = ''
 }
 
